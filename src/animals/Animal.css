@@ -1,0 +1,42 @@
+.app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+button {
+    background-color: rgb(153, 226, 45);
+    border: 1px solid blue;
+    padding: 12px;
+    margin: 10px;
+    width: 40%;
+    border-radius: 4px;
+}
+
+.animal-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.animal {
+    position: relative;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    box-shadow: 0px 3px 4px lightgray;
+    margin: 5px;
+    padding: 5px;
+}
+
+.ianimal {
+    height: 200px;
+}
+
+.iheart {
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+}
