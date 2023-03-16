@@ -4,13 +4,6 @@ import BookList from './components/BookList';
 import axios from 'axios';
 import './Books.css'
 
-class BooksClass{
-    constructor(id,name){
-        this.id = id;
-        this.title = name;
-    }
-}
-
 const Books = ()=>{
     const [books,setBooks] = useState([]);
     const url = "http://localhost:3001/books/";

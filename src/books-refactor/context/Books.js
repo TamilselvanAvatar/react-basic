@@ -8,13 +8,13 @@ const Provider = ({children}) =>{
     const url = "http://localhost:3001/books/";
     const fetchData = useCallback(async () =>{
         const response = await axios.get(url);
-        setBooks([...books,...response.data])
+        setBooks(books=>[...books,...response.data])
     },[])
 
     useEffect(()=>{fetchData()},[fetchData])
 
     const deleteBookById = async (id) =>{
-        const _ = await axios.delete(url+id);
+        await axios.delete(url+id);
         setBooks([...books.filter(el=>el.id !== id)])
     }
 
